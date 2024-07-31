@@ -2,6 +2,7 @@ package parser;
 
 import calculator.Calculator;
 import history.ExamplesHistory;
+import history.History;
 import operator.Operator;
 
 import java.time.LocalDateTime;
@@ -11,12 +12,12 @@ public class StringParser implements Parser {
 
     private final Calculator calculator;
     private final Scanner scanner;
-    private final ExamplesHistory examplesHistory;
+    private final History history;
 
-    public StringParser(Calculator calculator, Scanner scanner, ExamplesHistory examplesHistory) {
+    public StringParser(Calculator calculator, Scanner scanner, History history) {
         this.calculator = calculator;
         this.scanner = scanner;
-        this.examplesHistory = examplesHistory;
+        this.history = history;
     }
 
     public void parse() {
@@ -39,7 +40,7 @@ public class StringParser implements Parser {
 
             double result = calculator.calculate(first, second, operator);
 
-            examplesHistory.addCalculationToHistory(stringToCalculate + " = "
+            history.addCalculationToHistory(stringToCalculate + " = "
                     + result +" Время создания: "+ localDateTime);
 
         }
