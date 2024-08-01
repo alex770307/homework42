@@ -1,3 +1,1 @@
-Example{example='45 * 10', result=450.0, creationsDate=2024-08-01T23:23:29.690303800}
-Example{example='12 / 36', result=0.3333333333333333, creationsDate=2024-08-01T23:23:40.996595500}
-Example{example='78 - 65', result=13.0, creationsDate=2024-08-01T23:23:47.980988600}
+Example{example='1987 / 5', result=397.4, creationsDate=2024-08-01T23:50:42.318121400}
