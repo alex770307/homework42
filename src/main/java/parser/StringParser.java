@@ -1,7 +1,7 @@
 package parser;
 
 import calculator.Calculator;
-import history.ExamplesHistory;
+
 import history.History;
 import operator.Operator;
 
@@ -40,8 +40,7 @@ public class StringParser implements Parser {
 
             double result = calculator.calculate(first, second, operator);
 
-            history.addCalculationToHistory(stringToCalculate + " = "
-                    + result +" Время создания: "+ localDateTime);
+            history.addCalculationToHistory(stringToCalculate, result, localDateTime);
 
         }
     }

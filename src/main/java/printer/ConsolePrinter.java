@@ -1,5 +1,7 @@
 package printer;
 
+import history.Example;
+
 import java.util.List;
 
 public class ConsolePrinter implements Printer {
@@ -9,7 +11,7 @@ public class ConsolePrinter implements Printer {
     }
 
     @Override
-    public void print(List<String> list) {
+    public void print(List<Example> list) {
         System.out.println("История примеров:");
         list.forEach(System.out::println);
     }
