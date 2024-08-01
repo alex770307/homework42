@@ -3,11 +3,8 @@ package main;
 import calculator.MathCalculator;
 import history.ExamplesHistory;
 import parser.StringParser;
-import printer.ConsolePrinter;
-import printer.FilePrinter;
 import printer.Printer;
 import userinput.UserInput;
-
 import java.util.Scanner;
 
 public class Main {

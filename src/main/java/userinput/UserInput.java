@@ -3,33 +3,32 @@ package userinput;
 import printer.ConsolePrinter;
 import printer.FilePrinter;
 import printer.Printer;
-
 import java.util.Scanner;
 
 public class UserInput {
     private final Scanner scanner;
-
 
     public UserInput(Scanner scanner) {
         this.scanner = scanner;
 
     }
 
-    public int getOutputChoice() {
+    public String getOutputChoice() {
 
         System.out.print("Выберите, куда выводить результаты (1 - консоль, 2 - файл): ");
-        int choice = scanner.nextInt();
-        scanner.nextLine();
+        String choice = scanner.nextLine();
+        //scanner.nextLine();
 
         return choice;
     }
 
     public Printer getPrinter() {
-        int choice = getOutputChoice();
+
+        String choice = getOutputChoice();
         Printer printer;
-        if (choice == 1) {
+        if (choice.equals("1")) {
             printer = new ConsolePrinter();
-        } else if (choice == 2) {
+        } else if (choice.equals("2")) {
             System.out.print("Введите имя файла для вывода: ");
             String filename = scanner.nextLine();
             printer = new FilePrinter(filename);
