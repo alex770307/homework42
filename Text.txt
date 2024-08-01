@@ -1,1 +1,2 @@
-Example{example='1987 / 5', result=397.4, creationsDate=2024-08-01T23:50:42.318121400}
+Example{example='12 / 8956', result=0.0013398838767306833, creationsDate=2024-08-02T00:16:06.528131400}
+Example{example='45 * 8956', result=403020.0, creationsDate=2024-08-02T00:16:16.227892100}
