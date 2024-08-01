@@ -14,12 +14,9 @@ public class UserInput {
     }
 
     public String getOutputChoice() {
-
         System.out.print("Выберите, куда выводить результаты (1 - консоль, 2 - файл): ");
-        String choice = scanner.nextLine();
-        //scanner.nextLine();
 
-        return choice;
+        return scanner.nextLine();
     }
 
     public Printer getPrinter() {
