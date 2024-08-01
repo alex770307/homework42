@@ -1,1 +1,1 @@
-ExamplesHistory{printer=printer.FilePrinter@10f87f48, history=[]}
+Example{example='12 / 13', result=0.9230769230769231, creationsDate=2024-08-01T12:33:54.780948500}

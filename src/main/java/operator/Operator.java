@@ -22,7 +22,6 @@ public enum Operator {
                 return operator;
             }
         }
-
         throw new RuntimeException("Вы ввели неверный знак");
     }
 }
