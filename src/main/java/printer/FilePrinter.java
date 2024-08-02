@@ -1,7 +1,6 @@
 package printer;
 
 import history.Example;
-
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -27,7 +26,7 @@ public class FilePrinter implements Printer {
                 bufferedWriter.write(example + "\n");
             }
         } catch (IOException e) {
-            System.out.println(" " + e.getMessage());
+            System.out.println("Ошибка при записи в файл: " + e.getMessage());
         }
     }
 }
