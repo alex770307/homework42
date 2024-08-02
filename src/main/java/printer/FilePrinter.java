@@ -19,7 +19,7 @@ public class FilePrinter implements Printer {
 
     @Override
     public void print(List<Example> list) {
-        try (FileWriter fileWriter = new FileWriter(filename);
+        try (FileWriter fileWriter = new FileWriter(filename,true);
              BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);) {
 
             for (Example example : list) {
