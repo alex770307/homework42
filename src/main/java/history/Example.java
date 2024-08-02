@@ -1,6 +1,7 @@
 package history;
 
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.Objects;
 
 public class Example {
@@ -16,11 +17,9 @@ public class Example {
 
     @Override
     public String toString() {
-        return "Example{" +
-                "example='" + example + '\'' +
-                ", result=" + result +
-                ", creationsDate=" + creationsDate +
-                '}';
+        return " example= " + example
+                + " result= " + String.format("%.2f", result)
+                + " creationsDate= " + creationsDate;
     }
 
     @Override
