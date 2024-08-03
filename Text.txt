@@ -2,3 +2,4 @@
  example= 2 / 3 result= 0,67 creationsDate= 2024-08-02T08:06:28.326549500
  example= 3 / 4 result= 0,75 creationsDate= 2024-08-02T08:06:36.030416
  example= 4 / 5 result= 0,80 creationsDate= 2024-08-02T08:06:39.663120100
+ example= 100 / 210 result= 0,48 creationsDate= 2024-08-03T00:23:02.238594300
