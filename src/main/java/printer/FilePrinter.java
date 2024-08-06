@@ -6,6 +6,10 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.List;
 
+/**
+ * Класс для вывода информации о расчетах в файл.
+ * Реализует интерфейс Printer.
+ */
 public class FilePrinter implements Printer {
     private final String filename;
 

@@ -3,6 +3,10 @@ package history;
 import java.time.LocalDateTime;
 import java.util.Objects;
 
+/**
+ *  Класс, представляющий пример с результатом и датой создания.
+ *  Содержит информацию о математическом примере, его результате и дате создания.
+ */
 public class Example {
     private String example;
     private double result;

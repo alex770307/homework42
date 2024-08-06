@@ -1,9 +1,12 @@
 package printer;
 
 import history.Example;
-
 import java.util.List;
 
+/**
+ * Класс для вывода информации о расчетах в консоль.
+ * Реализует интерфейс Printer.
+ */
 public class ConsolePrinter implements Printer {
 
     public void print(double result) {

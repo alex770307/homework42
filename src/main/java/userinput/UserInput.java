@@ -5,6 +5,10 @@ import printer.FilePrinter;
 import printer.Printer;
 import java.util.Scanner;
 
+/**
+ *  Класс для обработки пользовательского ввода.
+ *  Предоставляет методы для выбора способа вывода результатов.
+ */
 public class UserInput {
     private final Scanner scanner;
 
