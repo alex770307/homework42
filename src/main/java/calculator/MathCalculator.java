@@ -3,6 +3,10 @@ package calculator;
 import operator.Operator;
 import printer.Printer;
 
+/**
+ * Класс, реализующий интерфейс Calculator.
+ * Выполняет математические операции над двумя числами и выводит результат с помощью принтера.
+ */
 public class MathCalculator implements Calculator {
 
     private final Printer printer;

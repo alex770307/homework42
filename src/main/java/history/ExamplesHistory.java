@@ -1,11 +1,15 @@
 package history;
 
 import printer.Printer;
-
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Класс для хранения и ведения истории расчетов.
+ * Реализует интерфейс History.
+ * Добавляет расчет в историю и выводит ее с помощью принтера.
+ */
 public class ExamplesHistory implements History {
 
     private final Printer printer;

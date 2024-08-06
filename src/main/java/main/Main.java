@@ -7,6 +7,9 @@ import printer.Printer;
 import userinput.UserInput;
 import java.util.Scanner;
 
+/**
+ * Главный класс приложения, который отвечает за запуск программы.
+ */
 public class Main {
 
     public static void main(String[] args) {

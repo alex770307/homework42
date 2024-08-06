@@ -1,13 +1,19 @@
 package parser;
 
 import calculator.Calculator;
-
 import history.History;
 import operator.Operator;
-
 import java.time.LocalDateTime;
 import java.util.Scanner;
 
+/**
+ * Класс, реализующий интерфейс Parser.
+ * <p>
+ * Класс StringParser отвечает за разбор строковых выражений,
+ * математических операций, вводимых пользователем.
+ * Он использует калькулятор для выполнения вычислений
+ * и историю для сохранения результата.
+ */
 public class StringParser implements Parser {
 
     private final Calculator calculator;
@@ -45,6 +51,8 @@ public class StringParser implements Parser {
 
                 history.addCalculationToHistory(stringToCalculate, result, localDateTime);
 
+            } catch (NumberFormatException e) {
+                System.out.println("Ошибка: Необходимо ввести корректные числа.");
             } catch (Exception e) {
                 System.out.println("Ошибка: " + e.getMessage());
             }

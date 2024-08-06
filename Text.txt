@@ -3,3 +3,6 @@
  example= 3 / 4 result= 0,75 creationsDate= 2024-08-02T08:06:36.030416
  example= 4 / 5 result= 0,80 creationsDate= 2024-08-02T08:06:39.663120100
  example= 100 / 210 result= 0,48 creationsDate= 2024-08-03T00:23:02.238594300
+ example= 6 / 7 result= 0,86 creationsDate= 2024-08-06T05:01:47.685729100
+ example= 5 / 6 result= 0,83 creationsDate= 2024-08-06T05:02:38.285853900
+ example= 7 / 8 result= 0,88 creationsDate= 2024-08-06T05:03:40.158031800
