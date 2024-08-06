@@ -1,13 +1,19 @@
 package parser;
 
 import calculator.Calculator;
-
 import history.History;
 import operator.Operator;
-
 import java.time.LocalDateTime;
 import java.util.Scanner;
 
+/**
+ * Класс, реализующий интерфейс Parser.
+ * <p>
+ * Класс StringParser отвечает за разбор строковых выражений,
+ * математических операций, вводимых пользователем.
+ * Он использует калькулятор для выполнения вычислений
+ * и историю для сохранения результата.
+ */
 public class StringParser implements Parser {
 
     private final Calculator calculator;
@@ -28,20 +34,28 @@ public class StringParser implements Parser {
             if ("exit".equalsIgnoreCase(stringToCalculate)) {
                 break;
             }
-            String[] operands = stringToCalculate.split(" ");
+            try {
+                String[] operands = stringToCalculate.split(" ");
+                if (operands.length != 3) {
+                    System.out.println("Ошибка: Введите в формате 'число оператор число'");
+                }
+                String firstOperand = operands[0];
+                String secondOperand = operands[2];
+                String operatorString = operands[1];
 
-            String firstOperand = operands[0]; //первое число
-            String secondOperand = operands[2]; //второе число
-            String operatorString = operands[1]; //знак
+                Operator operator = Operator.findByString(operatorString);
+                double first = Double.parseDouble(firstOperand);
+                double second = Double.parseDouble(secondOperand);
 
-            Operator operator = Operator.findByString(operatorString);
-            double first = Double.parseDouble(firstOperand);
-            double second = Double.parseDouble(secondOperand);
+                double result = calculator.calculate(first, second, operator);
 
-            double result = calculator.calculate(first, second, operator);
+                history.addCalculationToHistory(stringToCalculate, result, localDateTime);
 
-            history.addCalculationToHistory(stringToCalculate, result, localDateTime);
-
+            } catch (NumberFormatException e) {
+                System.out.println("Ошибка: Необходимо ввести корректные числа.");
+            } catch (Exception e) {
+                System.out.println("Ошибка: " + e.getMessage());
+            }
         }
     }
 }
