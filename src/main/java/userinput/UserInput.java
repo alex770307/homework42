@@ -14,7 +14,6 @@ public class UserInput {
 
     public UserInput(Scanner scanner) {
         this.scanner = scanner;
-
     }
 
     public String getOutputChoice() {
